@@ -6,14 +6,16 @@
 
 import React, { Component } from 'react';
 import { AppRegistry } from 'react-native';
+import { Provider } from 'react-redux';
+import { configureStore } from './src/store';
 import App from './src/containers/App';
 
-export default class Todo extends Component {
-  render() {
-    return (
-      <App />
-    );
-  }
-}
+const store = configureStore();
 
-AppRegistry.registerComponent('Todo', () => App);
+export default Index = () => (
+  <Provider store={store}>
+    <App />
+  </Provider>
+);
+
+AppRegistry.registerComponent('Todo', () => Index);

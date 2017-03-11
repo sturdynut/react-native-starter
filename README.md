@@ -9,9 +9,18 @@ A starter kit for new React Native projects.
 
 * Node 6+
 * NPM 3+
+* Yarn
+* React Native CLI
 * Watchman
-* XCode for IOS
-* Android Studio or Genymotion for Android
+* XCode (IOS)
+* Android Studio or Genymotion (Android)
+
+## Libraries
+
+* [react-native](https://github.com/facebook/react-native)
+* [redux](https://github.com/reactjs/redux)
+* [redux-thunk](https://github.com/gaearon/redux-thunk)
+* [redux-actions](https://github.com/acdlite/redux-actions)
 
 ## Scripts
 
@@ -21,9 +30,16 @@ A starter kit for new React Native projects.
 
 ### Running
 
-* `native-script run-ios` - For IOS
-* `native-script run-android` - For Android
+* `npm run ios` - Runs the ios simulator and a json-server server.
+* `npm run android` - Runs the android simulator and a json-server server.
+
+#### Package Manager
+
 * `npm run start` - To run the package manager (not necessary, the commands above will also start it.)
+
+### Tests
+
+* `npm run test` - Runs tests using jest.
 
 <div style='text-align:center;padding:30px 0;'>
   <a style='padding-right: 10px;' href='https://github.com/sturdynut/react-native-starter/blob/master/LICENSE'>LICENSE</a> ∙
